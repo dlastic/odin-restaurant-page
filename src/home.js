@@ -16,7 +16,6 @@ export default function loadHome() {
   `;
   image.src = restaurantImg;
   image.alt = "Italian restaurant tables";
-  image.height = 400;
 
   content.appendChild(headline);
   content.appendChild(image);

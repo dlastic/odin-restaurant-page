@@ -32,7 +32,6 @@ export default function loadMenu() {
     meal.textContent = meals[i];
     image.src = images[i];
     image.alt = meals[i];
-    image.height = 200;
     description.textContent = descriptions[i];
     priceTag.textContent = "Price:";
 
@@ -42,7 +41,7 @@ export default function loadMenu() {
     section.appendChild(image);
     section.appendChild(description);
     section.appendChild(priceParagraph);
-    
+
     content.appendChild(section);
   }
 }
