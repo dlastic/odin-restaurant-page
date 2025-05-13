@@ -1,5 +1,6 @@
 import loadHome from "./home.js";
 import loadMenu from "./menu.js";
+import loadAbout from "./about.js";
 
 const NavigationUI = (() => {
   const homeBtn = document.querySelector("#home");
@@ -19,6 +20,10 @@ const NavigationUI = (() => {
     menuBtn.addEventListener("click", () => {
       resetContent();
       loadMenu();
+    });
+    aboutBtn.addEventListener("click", () => {
+      resetContent();
+      loadAbout();
     });
   };
 
