@@ -23,6 +23,7 @@ const NavigationUI = (() => {
   };
 
   const init = () => {
+    loadHome();
     bindEvents();
   };
 

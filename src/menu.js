@@ -18,6 +18,7 @@ export default function loadMenu() {
 
   const content = document.querySelector("#content");
   const headline = document.createElement("h1");
+  headline.textContent = "Menu";
   content.appendChild(headline);
 
   for (let i = 0; i < meals.length; i++) {
@@ -28,18 +29,20 @@ export default function loadMenu() {
     const priceParagraph = document.createElement("p");
     const priceTag = document.createElement("strong");
 
-    meal.textContent = `${meals[i]}`;
-    image.src = `${images[i]}`;
-    image.alt = `${meals[i]}`;
-    image.height = "200"
-    description.textContent = `${descriptions[i]}`;
+    meal.textContent = meals[i];
+    image.src = images[i];
+    image.alt = meals[i];
+    image.height = 200;
+    description.textContent = descriptions[i];
     priceTag.textContent = "Price:";
+
+    priceParagraph.append(priceTag, ` ${prices[i]} CZK`);
 
     section.appendChild(meal);
     section.appendChild(image);
     section.appendChild(description);
-    priceParagraph.append(priceTag, ` ${prices[i]} CZK`);
     section.appendChild(priceParagraph);
+    
     content.appendChild(section);
   }
 }
