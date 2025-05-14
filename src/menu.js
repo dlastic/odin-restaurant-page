@@ -14,7 +14,7 @@ export default function loadMenu() {
     "Pasta with eggs, pecorino cheese, pancetta, and black pepper.",
     "Layered pasta with rich meat sauce, béchamel, and Parmesan cheese.",
   ];
-  const prices = ["240", "265", "260"];
+  const prices = ["250", "265", "260"];
 
   const content = document.querySelector("#content");
   const headline = document.createElement("h1");
